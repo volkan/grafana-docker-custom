@@ -7,4 +7,5 @@ services:
     ports:
       - "3000:3000"
     volumes:
+      - ./custom.ini:/go/src/github.com/grafana/grafana/conf/custom.ini
       - ${DATA}:/go/src/github.com/grafana/grafana/data
