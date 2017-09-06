@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  grafana:
+    build: grafana
+    entrypoint: ./bin/grafana-server
+    ports:
+      - "3000:3000"
+    volumes:
+      - ${DATA}:/go/src/github.com/grafana/grafana/data
